@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tribute Website</title>
+</head>
+<style>
+*{ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    font-size: 17px;
+    background-color:black;
+    color:white;
+}
+#main{
+    positon: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    overflow-y: scroll;
+}
+p{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif,'Times New Roman', Times;
+}
+details{
+    width: 100%;
+    font-family: sans-serif;
+    border: 2px solid violet;
+    padding: 5px;
+}
+details p{
+    padding: 20px;
+    color:black;
+    background: white;
+}
+summary{
+    padding:20px;
+    border:1px solid blue;
+    outline: none;
+    cursor:pointer;
+    display:flex;
+}
+section{
+    max-width: 80%;
+    width:100%;
+}
+a{
+    color:rgb(47,161,236);
+    text-decoration: none;
+}
+h3{
+    margin: 10px;
+}
+#image{
+    width:15%;
+    height:15%;
+    font-size: 15px;
+    border: 5px solid rgb(246,227,188);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 10px #272525;
+    overflow: hidden;
+}
+figcaption{
+    font-size: 20px;
+}
+#title{
+    color:orange;
+}
+b{
+    color:rgb(172,255,172);
+}
+#tribute-info{
+    width:50%;
+}
+@media  screen and (max-width:600px){
+    figcaption{
+        width:80%;
+        font-size: 15px;
+    }
+    #tribute-info{
+        width:100%;
+    }
+    #main{
+        margin-top:0;
+    }
+    
+}
+</style>
+<body>
+    <center>
+        <main id="main"></main>
+        <h1 id="TITLE">Dr.A.P.J.Abdul Kalam</h1>
+        <p>Missile Man & President of India</p>
+        <div class="img-div">
+        <figure>
+            <img src="abdul.jpg" alt="" id="image"width="170" heiht="170">
+            <figcaption id="img-caption"><q><b>A.P.J.ABDUL KALAM</b></q><br><q>His full name is Avul Pakir Jainulabdeen Abdul Kalam.He was an Indian aerospace scientist and statesman who served as the 11th president of India from 2002 to 2007. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering.</q></figcaption>
+
+        </figure>
+        </div>
+        <section id="tribute info">
+<details>
+    <Summary>What is A.P.J.Abdul kalam famous for?</Summary>
+    <p> Dr.A.P.J.Abdul kalam becomes the 11th president of India and served his country. He
+        was the most valued person of the country as his contribution as
+        a scientist and as a president is beyond compare. Apart from that, his
+        contribution to the ISRO (Indian Space Research Organization) is
+        remarkable. He headed many projects that contributed to the society
+        also he was the one who helped in the development of Agni and
+        Prithvi missiles. For his involvement in the Nuclear power in India,
+        he was known as “Missile Man of India”.<br> </p>
+</details>
+<details>
+    <summary>What organizations was A.P.J.Abdul kalam associated with?</summary>
+    <p> 1.Indian Space Research Organisation (ISRO): Dr. Kalam started his career as a scientist at ISRO, where he made significant contributions to the development of India's space program.<br>
+        2.Defence Research and Development Organisation (DRDO): Dr. Kalam played a crucial role in India's defense capabilities and missile technology development while working at DRDO. <br>
+        3.Indian National Committee for Space Research (INCOSPAR): Dr. Kalam was associated with INCOSPAR, the precursor to ISRO, where he contributed to early space research efforts in India.<br>
+        4.Vikram Sarabhai Space Centre (VSSC): He worked at VSSC, a key center of ISRO, where he contributed to the development of launch vehicle technology.<br>
+        5.Ministry of Defence, Government of India: Dr. Kalam served in various capacities in the Ministry of Defence, where he played a crucial role in strengthening India's defense capabilities.<br>
+        6.Bharat Dynamics Limited (BDL): Dr. Kalam served as the Director of BDL, a public sector undertaking in the defense sector.<br>
+        7.Indian Institute of Space Science and Technology (IIST): Dr. Kalam played a key role in the establishment of IIST, where he served as Chancellor.<br>
+        8.Anna University: He served as a professor and was involved in educational institutions. He also served as the Chancellor of Anna University.<br>
+        9.President of India: Dr. Kalam served as the 11th President of India from 2002 to 2007.<br>
+        </p>
+</details>
+<h3>
+    Read more About "Dr.A.P.J.ABDUL KALAM"
+    <a id="tribute-link"href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">wikipedia</a>
+</h3>
+        </section>
+    </center>
+</body>
+</html>
